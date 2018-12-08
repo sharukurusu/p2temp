@@ -1,0 +1,26 @@
+{{>navbar/navbar logged-in=true chat=true}}
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h2>Chat Room</h2>
+      </div>
+    </div>
+  </div>
+
+    <div id="chat-container">
+
+        <div id="chat"></div>
+        <div id="users"></div>
+
+        <form id="send-message">
+            <input id="message" type="text"></input>
+            <button id="send">Send</button>
+        </form>  
+    </div>
+    
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js"></script>
+
+  <script type="text/javascript" src="js/chatClient.js"></script>

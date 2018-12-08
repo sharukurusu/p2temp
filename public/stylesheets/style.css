@@ -1,0 +1,44 @@
+form.signup,
+form.login {
+  margin-top: 50px;
+};
+
+body {
+    color: black;
+    box-sizing: border-box;
+}
+
+#chat {
+   grid-area: chat;
+   height: 400px;
+    overflow: scroll !important;
+    border: 1px solid black !important;
+}
+
+#users {
+    grid-area: users;
+}
+
+#send-message {
+    grid-area: input;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#message {
+    width: 100%;
+}
+
+#chat p {
+    margin: auto;
+    border-radius: 5px;
+    background-color: gray;
+    opacity: 80%;
+}
+#chat-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+    "chat users"
+    "input input";
+}
